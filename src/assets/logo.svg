@@ -1,7 +1,7 @@
 <svg
                   className="h-8 w-8 text-green-600"
                   viewBox="0 0 24 24"
-                  fill="none"
+                  fill="green"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
@@ -46,4 +46,4 @@
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   />
- </svg>
+                </svg>
