@@ -1,13 +1,17 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import Login from "./components/Login";
+import MainLayout from "./pages/MainLayout";
+import HomeContainer from "./pages/home/HomeContainer";
+
 function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-blue-500 text-white text-3xl font-bold">
-      Tailwind is Working!
-    </div>
+    <Routes>
+      <Route path="/" element={<Login />} />
+      <Route path="/home" element={<MainLayout />}>
+        <Route index element={<HomeContainer />} />
+      </Route>
+    </Routes>
   );
 }
-
 export default App;
